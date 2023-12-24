@@ -1,0 +1,22 @@
+// let arr = [3, 5, 8, 12, 15, 17, 12, 124];
+// let [a, b, c, ...rest] = arr;
+
+// console.log(a, b, c, rest);
+
+// let [a, c, b, ...rest] = arr;
+// console.log(a, c, b, rest);
+
+/*******OBJECT destructuring ****/
+// let { a, b } = { a: 1, b: 4 };
+
+// console.log(a, b);
+
+let arr1 = [2, 5, 5];
+let obj1 = { ...arr1 };
+
+console.log(obj1);
+
+function sum(v1, v2, v3) {
+  return v1 + v2 + v3;
+}
+console.log(sum(...arr1));
