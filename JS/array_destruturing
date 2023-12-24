@@ -20,3 +20,51 @@ function sum(v1, v2, v3) {
   return v1 + v2 + v3;
 }
 console.log(sum(...arr1));
+
+
+
+//Optional chaining
+const obj = {
+  name: "Kapil",
+  age: 21,
+  adress: {
+    street: "Main street",
+    city: "New Road Bulandshahr",
+    zip: 230623,
+    state: "UP",
+  },
+};
+
+// // console.log(obj.name);
+// console.log(obj.adress.city);
+// console.log(obj.adress.pincode);
+// console.log(obj?.adress?.zipcode);
+
+const arr = [
+  { name: "Ankit chaudhary", age: 24 },
+  { name: "Aman chaudhary", age: 20 },
+  { name: "Anshu chaudhary", age: 20 },
+];
+
+console.log(arr[0].age);
+console.log(arr[1].name);
+console.log(arr[3]?.age);
+
+// Ternary operator
+var authenticated = false;
+
+// if (authenticated) {
+//   console.log("show Btn SIGN OUT");
+// } else {
+//   console.log("show Btn LOG IN");
+// }
+
+const greeting = (person) => {
+  const name = person ? person.name : "Stranger";
+  return `"HELLO! " ${name}`;
+};
+
+// console.log(greeting({ name: "Kapil" }));
+// console.log(greeting(null));
+// authenticated ? console.log("SIGN OUT") : console.log("LOG IN");
+
